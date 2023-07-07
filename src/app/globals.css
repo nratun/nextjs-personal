@@ -6,6 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --nav-height: 100px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,6 +14,7 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    --nav-height: 70px;
   }
 }
 
@@ -24,4 +26,57 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.mainheader {
+  display: flex;
+  background-color: pink;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  height: var(--nav-height);
+  padding: 0px 30px;
+}
+
+.nav-links {
+  float: right;
+  margin: 0;
+  padding: 0;
+  top: 20px;
+  transition: opacity .35s ease .75s;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.sidebar {
+  position: absolute;
+  top: 40%;
+  color: orange;
+  background-color: darkslategrey;
+  position: sticky;
+  width: 5%;
+  float: right;
+}
+
+.sidebar li {
+  width: 50px;
+  height: 50px;
+}
+
+.mainEdges {
+  margin: 0px 100px;
+}
+
+.sectionEdges {
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: darkgray;
+}
+
+.title {
+  font-size: 50px;
 }
