@@ -3,29 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-  --nav-height: 100px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
     --nav-height: 70px;
-  }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-image: url('./images/paperWallpaper.jpg');
 }
 
 .mainheader {
@@ -53,12 +35,16 @@ body {
 
 .sidebar {
   position: absolute;
-  top: 40%;
+  top: 35%;
   color: orange;
   background-color: darkslategrey;
   position: sticky;
   width: 5%;
   float: right;
+}
+
+.alignNavItems {
+  text-align: center;
 }
 
 .sidebar li {
@@ -71,12 +57,31 @@ body {
 }
 
 .sectionEdges {
+  display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
+  height: 90vh;
   background-color: darkgray;
 }
 
 .title {
   font-size: 50px;
+}
+
+.sectionTitle {
+  font-size: 25px;
+}
+
+.footerStyle {
+  padding: 4% 0%;
+  background-color: mediumseagreen;
+}
+
+.footerContent {
+  justify-content: center;
+  text-align: center;
+}
+
+.pEdges {
+  margin-right: 35%;
 }

@@ -56,24 +56,31 @@ export default function Home() {
           <p>Majoring in Computer Science and minoring in Game Studies & Cognitive Science</p>
         </section>
         <section className="sectionEdges">
-          About Me
-          <div>
+          <h2 className="sectionTitle">About Me</h2>
+          <p className="pEdges">
             Hey! I’m Rana, a software developer and third year student at the University of Delaware. I’m currently pursuing a degree in Computer Science and minoring in Cognitive Science and Game Studies. In my free time, I like to experiment with new programming languages and software to create mini games and other personalized projects.
-          </div>
+          </p>
         </section>
         <section className="sectionEdges" id="skills">
-          Skills
+          <h2 className="sectionTitle">Skills</h2>
+          <p>Hola</p>
         </section>
         <section className="sectionEdges" id="projects">
-          Projects
+          <h2 className="sectionTitle">Projects</h2>
+          <p>Belloo</p>
         </section>
         <section className="sectionEdges" id="resume">
-          Resume
+          <h2 className="sectionTitle">Resume</h2>
+          <p>Heres my resume!</p>
         </section>
         <section className="sectionEdges" id="contact">
-          Contact
+          <h2 className="sectionTitle">Contact</h2>
+          <p>Contact me at blah blah blah</p>
         </section>
       </main>
+      <footer className="footerStyle">
+        <div className="footerContent">© Rana Tuncer 2023</div>
+      </footer>
     </body>
   )
 }
